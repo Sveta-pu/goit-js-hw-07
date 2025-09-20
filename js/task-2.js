@@ -32,7 +32,7 @@ const photos = images.map(image => {
   imgEl.src = image.url;
   imgEl.alt = image.alt;
   imgEl.width = 360;
-  li.append(imgEl); //додає елемент зображення <img> як дочірній до елемента списку <li>
+  li.append(imgEl);
   return li;
 });
 gallery.append(...photos);

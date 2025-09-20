@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   margin: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -17,6 +23,7 @@ body {
   padding: 6px;
   background: white;
 }
+
 .animals li {
   border: 1px solid gray;
   padding: 6px;
@@ -26,14 +33,22 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  width: 100%;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
   justify-content: center;
-  /* cursor: pointer; */
+}
+.gallery img {
+  display: block;
+  width: 360px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.gallery img:hover {
+  transform: scale(1.05);
 }
