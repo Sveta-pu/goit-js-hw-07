@@ -19,6 +19,7 @@ body {
   line-height: 1.5;
 }
 
+/* Контейнер тварини */
 #categories {
   display: flex;
   flex-direction: column;
@@ -67,7 +68,7 @@ body {
   color: #2e2f42;
   gap: 24px;
 }
-
+/* Контейнер галереї */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +91,7 @@ body {
 .gallery img:hover {
   transform: scale(1.05);
 }
-/* таск чотири */
+
 /* Контейнер форми */
 .login-form {
   max-width: 420px;
@@ -109,7 +110,7 @@ body {
 .login-form label {
   display: flex;
   flex-direction: column;
-  gap: 8px; /* відступ між текстом і інпутом */
+  gap: 8px;
   font-size: 14px;
   letter-spacing: 0.02em;
 }
@@ -148,17 +149,4 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.05s ease;
-}
-
-.login-form button[type='submit']:hover {
-  background: #6c8cff;
-}
-
-.login-form button[type='submit']:active {
-  transform: translateY(1px);
-}
-
-/* Необов’язково: збільшити клік-зону лейблів */
-.login-form label > input {
-  margin-top: 0;
 }
